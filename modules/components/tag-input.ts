@@ -109,6 +109,13 @@ export class TagInputComponent extends TagInputAccessor implements OnInit {
     @Input() public readonly: boolean;
 
     /**
+     * @name animationDisabled
+     * @desc if set to true, the flyInOut animation is disabled
+     * @type {boolean}
+     */
+    @Input() public animationDisabled = false;
+
+    /**
      * @name transform
      * @desc function passed to the component to transform the value of the items, or reject them instead
      */
