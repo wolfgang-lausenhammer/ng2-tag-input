@@ -16,7 +16,7 @@
              (onKeyDown)="handleKeydown($event, item)"
              (onTagEdited)="onTagEdited.emit(item)"
 
-             [@flyInOut]="'in'"
+             [@flyInOut]="animationDisabled ? '' : 'in'"
              [index]="i"
              [attr.tabindex]="readonly ? -1 : 0"
              [class.readonly]="readonly"
